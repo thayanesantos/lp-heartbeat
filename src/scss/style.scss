@@ -1,0 +1,188 @@
+@import './variables.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $rubik;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.navbar-light {
+  background-color: $white;
+  box-shadow: 0 0 1px 0 $gray-medium,
+    0 2px 2px 0 $gray-medium;
+}
+
+.bg-gray {
+  background-color: $gray-medium;
+}
+
+.bg-gray-light {
+  background-color: $gray-light;
+}
+
+.bg-onda {
+  background-image: url('../../assets/onda-transicao.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  bottom: 2px;
+  position: relative;
+}
+
+
+// logo, navbar
+.home-logo {
+  img {
+    width: 6em;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+.link-contact {
+  color: $purple;
+
+  &:hover {
+    color: $yellow;
+  }
+}
+
+.btn-outline {
+  &-purple {
+    margin: 0 15px;
+    text-transform: uppercase;
+    color: $purple;
+    border: 1px solid $purple;
+  }
+
+  &-yellow {
+    margin: 0 5px;
+    text-transform: uppercase;
+    color: $purple;
+    border: 1px solid $yellow;
+    background-color: $yellow;
+  }
+}
+
+#banner {
+  .lines-bg {
+    position: absolute;
+    top: 40vh;
+    width: 100%;
+  }
+
+  .red-square {
+    position: relative;
+    top: 20vh;
+    width: 20px;
+    float: right;
+    right: 9vw
+  }
+
+  .dot-balls {
+    position: absolute;
+    top: 40vh;
+    width: 100%;
+  }
+}
+
+.bg-gradient {
+  background-image: linear-gradient(-90deg, #d1384d, #d4453c);
+}
+
+.stages-circle {
+  display: flex;
+  justify-content: space-around;
+
+  .circle {
+    background-color: $purple;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border-radius: 25px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 30px;
+
+    p {
+      text-align: center;
+      font-size: 35px;
+      color: $white;
+      margin: 10px 0;
+      font-weight: 600;
+    }
+  }
+
+
+
+}
+
+.stages-icons {
+  display: flex;
+  justify-content: space-around;
+
+  .stage-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 30px;
+
+    p {
+      color: $white;
+      text-align: center;
+    }
+
+    #stage-img1 {
+      width: 120px;
+      margin-top: 35px;
+    }
+  }
+
+  .stage-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    p {
+      color: $white;
+      text-align: center;
+      margin-right: 30px;
+    }
+
+    #stage-img2 {
+      width: 150px;
+    }
+  }
+
+  .stage-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    p {
+      color: $white;
+      text-align: center;
+    }
+
+    #stage-img3 {
+      width: 70px;
+      margin-top: 35px;
+      margin-right: 20px;
+    }
+  }
+}
