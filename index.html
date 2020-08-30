@@ -8,7 +8,7 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
 		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<link id="style" rel="stylesheet" type="text/css" href="src/css/style.css" />
+	<link id="style" rel="stylesheet" type="text/css" href="src/scss/style.css" />
 	<title>HeartBeat</title>
 </head>
 
@@ -149,7 +149,8 @@
 						poucos minutos por meio de um painel <br>
 						administrativo intuitivo e simples de usar.
 					</p>
-					<button>SOLICITE UMA APRESENTAÇÃO AGORA</button>
+					<button class="btn btn-outline-yellow my-2 my-sm-0" type="submit">SOLICITE UMA APRESENTAÇÃO
+						AGORA</button>
 				</div>
 
 				<div class="col-md-7 col-lg-7">
@@ -195,33 +196,35 @@
 
 	<!-- ============================= SECTION 5 ================================== -->
 
-	<section class="bg-gray-light">
+	<section class="bg-gray-light ">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 col-lg-12">
-					<h3>Heartbeat é ideal para todas as situações</h3>
-					<h4>Leve essa experiência incrível para o seu público.</h4>
+				<div class="col-md-12 col-lg-12 d-flex flex-column justify-content-center">
+					<h3 class="text-center">Heartbeat é ideal para todas as situações</h3>
+					<h4 class="text-center">Leve essa experiência incrível para o seu público.</h4>
 				</div>
-				<div class="col-md-12 col-lg-12 ">
-					<div class="col-md-2">
-						<img src="./assets/sec05_reuniao_icon.svg" alt="">
-						<p>Reuniões</p>
+			</div>
+			<div class="row m-5">
+				<div class="col-md-12 col-lg-12 d-flex justify-content-around align-items-end">
+					<div class="col-sm d-flex flex-column align-content-between">
+						<img class="img-thumb m-2" src="./assets/sec05_reuniao_icon.svg" alt="">
+						<p class="text-center">Reuniões</p>
 					</div>
-					<div class="col-md-2">
-						<img src="./assets/sec05_eventos_icon.svg" alt="">
-						<p>Eventos</p>
+					<div class="col-sm d-flex flex-column align-content-between">
+						<img class="img-thumb m-3" src="./assets/sec05_eventos_icon.svg" alt="">
+						<p class="text-center">Eventos</p>
 					</div>
-					<div class="col-md-2">
-						<img src="./assets/sec05_palestras_icon.svg" alt="">
-						<p>Palestras</p>
+					<div class="col-sm d-flex flex-column align-content-between">
+						<img class="img-thumb m-3" src="./assets/sec05_palestras_icon.svg" alt="">
+						<p class="text-center">Palestras</p>
 					</div>
-					<div class="col-md-2">
-						<img src="./assets/sec05_apresentacoes_icon.svg" alt="">
-						<p>Apresentações</p>
+					<div class="col-sm d-flex flex-column align-content-between">
+						<img class="img-thumb m-3" src="./assets/sec05_apresentacoes_icon.svg" alt="">
+						<p class="text-center">Apresentações</p>
 					</div>
-					<div class="col-md-2">
-						<img src="./assets/sec05_treinamentos_icon.svg" alt="">
-						<p>Treinamentos</p>
+					<div class="col-sm d-flex flex-column align-content-between">
+						<img class="img-thumb m-3" src="./assets/sec05_treinamentos_icon.svg" alt="">
+						<p class="text-center">Treinamentos</p>
 					</div>
 				</div>
 			</div>
@@ -229,19 +232,87 @@
 	</section>
 	<!-- ============================= SECTION 5 ================================== -->
 
+	<!-- ============================= SECTION 6 ================================== -->
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="d-flex justify-content-center align-items-center w-100 flex-column text-center">
+					<h3 class="display-4">Leve já essa experiência<br /> para a sua empresa</h3>
+					<!-- <p class="lead">Subtitle</p> -->
+					<hr class="my-4">
+					<button class="btn btn-outline-yellow my-2 my-sm-0 w-20" type="submit">Comece agora!</button>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ============================= SECTION 6 ================================== -->
+
+	<!-- ============================= FOOTER ================================== -->
+	<footer class="footer mt-auto pt-3 w-100 pb-0 mb-0 bg-gray-light">
+		<div class="container d-flex">
+			<div class="col-sm">
+				<p>HEARTBEAT</p>
+			</div>
+			<div class="col-sm d-flex justify-content-around">
+				<!-- <i class="fab fa-facebook-f" src="../assets/"></i> -->
+				<span class="brand-icons m-2">
+					<a href="http://">
+						<img src="assets/icons/twitter.svg" alt="">
+					</a>
+				</span>
+				<span class="brand-icons m-2">
+					<a href="http://">
+						<img src="assets/icons/facebook-f.svg" alt="">
+					</a>
+				</span>
+				<span class="brand-icons m-2">
+					<a href="http://">
+						<img src="assets/icons/linkedin-in.svg" alt="">
+					</a>
+				</span>
+			</div>
+			<div class="col-sm justify-content-center">
+				<div class="row">
+
+					<span class="contact-icons m-0">
+						<a href="mailto:contato@heartbeat.com.br" class="d-flex flex-row">
+							<img src="assets/icons/linkedin-in.svg" fill="#cecece" alt="">
+							<span class="text-nowrap p-1">contato@heartbeat.com.br</span>
+						</a>
+					</span>
+				</div>
+				<div class="row">
+					<span class="contact-icons m-0">
+						<a href="tel:+" class="d-flex flex-row">
+							<img src="assets/icons/linkedin-in.svg" fill="#cecece" alt="">
+							<span class="text-nowrap p-1"> 11 99999-9999</span>
+						</a>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="copy row d-flex align-items-end justify-content-center align-self-end justify-self-end w-100 m-0">
+			<small class="text-white font-weight-lighter"> &copy; Heartbeat 2020. Todos os direitos reservados.</small>
+		</div>
+	</footer>
+
+	<!-- ============================= FOOTER ================================== -->
+
 
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-		crossorigin="anonymous"></script>
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-		crossorigin="anonymous"></script>
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+	</script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-		crossorigin="anonymous"></script>
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+	</script>
 </body>
 
 </html>
