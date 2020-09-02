@@ -79,11 +79,13 @@ svg {
 }
 
 .bg-onda {
-  background-image: url('../../assets/onda-transicao.png');
+  background-image: url('/dinamica_ludica_landingpage_institucional/assets/img/onda-transicao.png');
   background-size: 100%;
   background-repeat: no-repeat;
-  bottom: 2px;
+  bottom: 0vh;
+  background-color: $white;
   position: relative;
+  margin-top: -15vh;
 }
 
 
@@ -122,24 +124,176 @@ svg {
 }
 
 #banner {
+  .title-section1 {
+    padding-top: 5vh;
+    bottom: 30px;
+
+    h1 {
+      font-size: 3.5em;
+      color: $purple;
+      font-weight: 400;
+
+      span {
+        color: $rose;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      color: $dark-light;
+    }
+  }
+
   .lines-bg {
     position: absolute;
-    top: 40vh;
+    top: 14vh;
     width: 100%;
+  }
+
+  .dots-white {
+    position: relative;
+    top: 50vh;
+    width: 6vw;
+    left: 5vw;
   }
 
   .red-square {
     position: relative;
-    top: 20vh;
-    width: 20px;
+    top: 7vh;
+    width: 15px;
     float: right;
-    right: 9vw
+    left: 32vw;
   }
 
   .dot-balls {
-    position: absolute;
-    top: 40vh;
-    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 25vh;
+    float: right;
+    width: 150px;
+
+    img {
+      position: relative;
+      left: 6vw;
+      width: 280px;
+    }
+
+  }
+
+  .men-banner {
+    position: relative;
+    bottom: 50px;
+    float: right;
+    left: 2vw;
+  }
+}
+
+#section2 {
+  .dot-balls-light {
+    position: relative;
+    top: 25vh;
+    right: 22vw;
+
+    img {
+      position: absolute;
+      width: 280px;
+    }
+  }
+
+  .text-information {
+    margin-top: 15vh;
+
+    h2 {
+      color: $dark-light;
+      font-size: 2.3em;
+      font-weight: 400;
+    }
+
+    .texts-p {
+      margin-top: 7vh;
+
+      p {
+        color: $gray;
+        font-size: 18px;
+
+        span {
+          color: $purple;
+        }
+      }
+    }
+
+  }
+
+  .wave-phone {
+    overflow: hidden;
+    position: relative;
+    top: 25vh;
+    float: right;
+    width: 98vw;
+
+    img {
+      position: relative;
+      left: 52vw;
+      width: 70%;
+    }
+  }
+
+  .phone-m {
+    position: relative;
+    top: 0vh;
+    left: 5vw;
+    z-index: 999;
+
+    img {
+      position: absolute;
+      width: 22vw;
+    }
+  }
+
+  .dots-yellow {
+    position: relative;
+    top: 70vh;
+    left: 0vw;
+    z-index: 99;
+
+    img {
+      position: absolute;
+      width: 8vw;
+    }
+  }
+}
+
+#section3 {
+  .title-line {
+    margin-bottom: 3em;
+
+    p {
+      color: $rose;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    hr {
+      border: 0;
+      border-top: 3px solid $yellow;
+      margin-bottom: 3rem;
+      margin-top: -1em;
+      width: 185px;
+      float: left;
+      position: absolute;
+    }
+  }
+
+  h3 {
+    color: $dark-light;
+    font-size: 2.4em;
+    font-weight: 400;
+    margin-bottom: 1em;
+  }
+
+  p {
+    font-size: 20px;
+    color: $gray;
   }
 }
 

@@ -8,7 +8,7 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
 		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<link id="style" rel="stylesheet" type="text/css" href="src/scss/style.css" />
+	<link id="style" rel="stylesheet" type="text/css" href="src/scss/dist/style.css" />
 	<title>HeartBeat</title>
 </head>
 
@@ -18,8 +18,10 @@
 	<nav class="navbar navbar-expand-lg navbar-light sticky-top">
 		<div class="container">
 			<div class="home-logo">
-				<a class="navbar-brand" href="https://cdn.discordapp.com/attachments/423832790270738442/747564753391452411/LAYOUT_LANDING_PAGE_alterada.jpg" target="_blank"
-					<img src="assets/logo.svg" alt="">
+				<a class="navbar-brand"
+					href="https://cdn.discordapp.com/attachments/423832790270738442/747564753391452411/LAYOUT_LANDING_PAGE_alterada.jpg"
+					target="_blank">
+					<img src="assets/img/logo.svg" alt="">
 				</a>
 			</div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -43,15 +45,16 @@
 	<!-- ============================== SECTION 1 ================================== -->
 	<section class="bg-gray" id="banner">
 		<div>
-			<img src="./assets/sec01_wave.svg" alt="" class="lines-bg">
-			<img src="./assets/sec01_red_square.svg" class="red-square">
-			<!-- <img src="./assets/sec01_side_dot_balls.svg" class="dot-balls"> -->
+			<img src="./assets/img/sec01_wave.svg" alt="" class="lines-bg">
+			<div class="dot-balls">
+				<img src="./assets/img/sec01_side_dot_balls.svg">
+			</div>
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-6">
+				<div class="col-sm-12 col-md-5 col-lg-5 bg-gray title-section1">
 					<h1>
-						Uma dinâmica <br>de grupo como <br> vc nunca <b>viu <br> nem ouviu!</b>
+						Uma dinâmica <br>de grupo como <br> vc nunca <span><b>viu <br> nem ouviu!</b></span>
 					</h1>
 					<p>
 						Heartbeat é um jogo divertido inspirado em <br> Guitar Hero, no qual os participantes devem <br>
@@ -59,9 +62,10 @@
 						músicas e capturar as notas musicais <br> que vão passando em uma plataforma.
 					</p>
 				</div>
-				<div class="col-6">
-					<img src="./assets/homem.png" alt="">
-
+				<div class="col-sm-12 col-md-7 col-lg-7">
+					<img src="./assets/img/homem.png" alt="" class="men-banner">
+					<img src="./assets/img/sec01_white_dots.svg" alt="" class="dots-white">
+					<img src="./assets/img/sec01_red_square.svg" class="red-square">
 				</div>
 			</div>
 		</div>
@@ -71,32 +75,58 @@
 
 
 	<!-- ============================= SECTION 2 ================================== -->
-	<section class="bg-onda">
-		<div class="container">
-
-			<div class="col-md-6 col-lg-6">
-				<h2>
-					A <b> análise comportamental</b> do trabalho colaborativo sendo explorada de maneira <b>lúdica</b>
-					e
-					<b> inovadora</b>
-				</h2>
-				<p>
-					Assim como uma orquestra, sua empresa precisa garantir <br> harmonia entre todos para obter os
-					melhores resultados nessas<br> épocas tão difícieis e competitivas. Por isso a <br><b>Dinâmica
-						Lúdica</b><br> trouxe um jogo voltado para engajar sua equipe em um trabalho<br> coletivo, onde
-					cada um deve seguir o ritmo corretamente, criando <br> um ambiente divertido e conectando as
-					pessoas. Heartbeat conta <br> com 2 modos de jogo:
-				</p>
-
-				<p>
-					- <b> Modo banda</b>: cada membro da equipe toca um instrumento <br> diferente, conforme sua
-					habilidade;
-				</p>
-				<p>
-					- <b>Modo orquestra</b>: cada membro toca uma parte da música.
-				</p>
+	<section class="bg-onda" id="section2">
+		<div style="position: absolute;">
+			<div class="wave-phone">
+				<img src="./assets/img/sec02_wave_phone.svg" alt="">
 			</div>
-			<div class="col-md-8 col-lg-8"></div>
+		</div>
+
+		<div class="container">
+			<div class="row text-information">
+				<div class="col-sm-12 col-md-7 col-lg-7 ">
+					<div class="dot-balls-light">
+						<img src="./assets/img/sec02_side_dot_balls.svg" alt="">
+					</div>
+					<h2>
+						A <b> análise comportamental</b> do trabalho colaborativo sendo explorada de maneira
+						<b>lúdica</b>
+						e
+						<b> inovadora</b>
+					</h2>
+					<div class="texts-p">
+						<p>
+							Assim como uma orquestra, sua empresa precisa garantir <br> harmonia entre todos para obter
+							os
+							melhores resultados nessas<br> épocas tão difícieis e competitivas. Por isso a
+							<span><b>Dinâmica Lúdica</b></span><br> trouxe um jogo voltado para engajar sua equipe em um
+							trabalho<br> coletivo,
+							onde
+							cada um deve seguir o ritmo corretamente, criando <br> um ambiente divertido e conectando as
+							pessoas. Heartbeat conta <br> com 2 modos de jogo:
+						</p>
+
+						<p>
+							- <b> Modo banda</b>: cada membro da equipe toca um instrumento <br> diferente, conforme sua
+							habilidade;
+						</p>
+						<p>
+							- <b>Modo orquestra</b>: cada membro toca uma parte da música.
+						</p>
+					</div>
+
+				</div>
+				<div class="col-sm-12 col-md-5 col-lg-5">
+
+					<div class="phone-m">
+						<img src="./assets/img/sec02_phone.svg" alt="">
+					</div>
+					<div class="dots-yellow">
+						<img src="./assets/img/sec02_dots_phone.svg" alt="">
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</section>
 	<!-- ============================= SECTION 2 ================================== -->
@@ -104,20 +134,20 @@
 
 	<!-- ============================= SECTION 3 ================================== -->
 
-	<section class="bg-gray-light">
+	<section class="bg-gray-light" id="section3">
 		<div class="container">
 			<div class="col-md-5 col-lg-5">
 				<!-- TITLE SUBLINHADO -->
-				<p>
-					VOCÊ TAMBÉM PODE AJUDAR!
-				</p>
-				<hr>
+				<div class="title-line">
+					<p>
+						VOCÊ TAMBÉM PODE AJUDAR!
+					</p>
+					<hr>
+				</div>
+
 
 				<h3>
-					Ressoando nas <br>
-					<b>
-						batidas do coração!
-					</b>
+					Ressoando nas <br> <b>batidas do coração</b>!
 				</h3>
 				<p>
 					Parte da renda do projeto será revertida para a <br>
@@ -168,19 +198,19 @@
 					</div>
 					<div class="stages-icons">
 						<div class="stage-1">
-							<img src="./assets/sec04_computer_icon.svg" id="stage-img1">
+							<img src="./assets/img/sec04_computer_icon.svg" id="stage-img1">
 							<p>Crie um evento na <br>
 								plataforma
 							</p>
 						</div>
 						<div class="stage-2">
-							<img src="./assets/sec04_arrow_icon.svg" id="stage-img2">
+							<img src="./assets/img/sec04_arrow_icon.svg" id="stage-img2">
 							<p>Compartilhe o link com <br>
 								os usuários
 							</p>
 						</div>
 						<div class="stage-3">
-							<img src="./assets/sec04_phone_icon.svg" id="stage-img3">
+							<img src="./assets/img/sec04_phone_icon.svg" id="stage-img3">
 							<p>Todos precisam estar <br>
 								conectados à internet <br>
 								para iniciar o jogo
@@ -207,23 +237,23 @@
 			<div class="row m-5">
 				<div class="col-md-12 col-lg-12 d-flex justify-content-around align-items-end">
 					<div class="col-sm d-flex flex-column align-content-between">
-						<img class="img-thumb m-2" src="./assets/sec05_reuniao_icon.svg" alt="">
+						<img class="img-thumb m-2" src="./assets/img/sec05_reuniao_icon.svg" alt="">
 						<p class="text-center">Reuniões</p>
 					</div>
 					<div class="col-sm d-flex flex-column align-content-between">
-						<img class="img-thumb m-3" src="./assets/sec05_eventos_icon.svg" alt="">
+						<img class="img-thumb m-3" src="./assets/img/sec05_eventos_icon.svg" alt="">
 						<p class="text-center">Eventos</p>
 					</div>
 					<div class="col-sm d-flex flex-column align-content-between">
-						<img class="img-thumb m-3" src="./assets/sec05_palestras_icon.svg" alt="">
+						<img class="img-thumb m-3" src="./assets/img/sec05_palestras_icon.svg" alt="">
 						<p class="text-center">Palestras</p>
 					</div>
 					<div class="col-sm d-flex flex-column align-content-between">
-						<img class="img-thumb m-3" src="./assets/sec05_apresentacoes_icon.svg" alt="">
+						<img class="img-thumb m-3" src="./assets/img/sec05_apresentacoes_icon.svg" alt="">
 						<p class="text-center">Apresentações</p>
 					</div>
 					<div class="col-sm d-flex flex-column align-content-between">
-						<img class="img-thumb m-3" src="./assets/sec05_treinamentos_icon.svg" alt="">
+						<img class="img-thumb m-3" src="./assets/img/sec05_treinamentos_icon.svg" alt="">
 						<p class="text-center">Treinamentos</p>
 					</div>
 				</div>
@@ -306,13 +336,13 @@
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-	</script>
+		</script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
 		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-	</script>
+		</script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
 		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-	</script>
+		</script>
 </body>
 
 </html>
