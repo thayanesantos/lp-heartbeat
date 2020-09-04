@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 html,
 body,
 ul,
@@ -25,9 +26,11 @@ section {
   height: 40px;
   color: #431641;
 }
+
 .brand-icons a {
   color: #431641;
 }
+
 .brand-icons img {
   color: #431641;
   height: 24px;
@@ -39,9 +42,11 @@ section {
   height: 40px;
   color: #431641;
 }
+
 .contact-icons a {
   color: #431641;
 }
+
 .contact-icons img {
   color: #431641;
   height: 24px;
@@ -66,24 +71,31 @@ svg {
 }
 
 .bg-onda {
-  background-image: url("/dinamica_ludica_landingpage_institucional/assets/img/onda-transicao.png");
+  background-image: url("../../../assets/img/onda-transicao.png");
   background-size: 100%;
   background-repeat: no-repeat;
   bottom: 0vh;
   background-color: white;
+  height: 160px;
+  width: 100%;
   position: relative;
-  margin-top: -15vh;
+  margin-top: -22vh;
+  display: block;
+  content: '';
+  z-index: 0;
 }
 
 .home-logo img {
   width: 6em;
   margin: 0px;
   padding: 0px;
+
 }
 
 .link-contact {
   color: #431641;
 }
+
 .link-contact:hover {
   color: #ffc700;
 }
@@ -94,6 +106,7 @@ svg {
   color: #431641;
   border: 1px solid #431641;
 }
+
 .btn-outline-yellow {
   margin: 0 5px;
   text-transform: uppercase;
@@ -106,29 +119,46 @@ svg {
   padding-top: 5vh;
   bottom: 30px;
 }
+
 #banner .title-section1 h1 {
   font-size: 3.5em;
   color: #431641;
   font-weight: 400;
 }
+
 #banner .title-section1 h1 span {
   color: #df3752;
 }
+
 #banner .title-section1 p {
   font-size: 18px;
   color: #424242;
 }
-#banner .lines-bg {
-  position: absolute;
-  top: 14vh;
-  width: 100%;
+
+
+#banner .bg-waves {
+  position: relative;
+  background-color: #431641;
 }
+
+#banner .bg-waves .lines-bg {
+  background-image: url('../../../assets/img/sec01_wave.svg');
+  background-repeat: no-repeat;
+  background-position-x: 40vw;
+  position: absolute;
+  top: 13vh;
+  height: 50vh;
+  width: 100%;
+  right: 0vw;
+}
+
 #banner .dots-white {
   position: relative;
   top: 50vh;
   width: 6vw;
   left: 5vw;
 }
+
 #banner .red-square {
   position: relative;
   top: 7vh;
@@ -136,6 +166,7 @@ svg {
   float: right;
   left: 32vw;
 }
+
 #banner .dot-balls {
   overflow: hidden;
   position: relative;
@@ -143,16 +174,27 @@ svg {
   float: right;
   width: 150px;
 }
+
 #banner .dot-balls img {
   position: relative;
   left: 6vw;
   width: 280px;
 }
+
 #banner .men-banner {
   position: relative;
   bottom: 50px;
   float: right;
   left: 2vw;
+  /* position: absolute; */
+  display: block;
+  z-index: 999;
+  -webkit-mask-image: url('../../../assets/img/method-draw-image.svg');
+  mask-image: url('../../../assets/img/method-draw-image.svg');
+  -webkit-mask-position: -263px -1006px;
+  mask-position: -263px -1006px;
+  /* -webkit-mask-composite: xor; */
+  /* mask-composite: xor; */
 }
 
 #section2 .dot-balls-light {
@@ -160,28 +202,35 @@ svg {
   top: 25vh;
   right: 22vw;
 }
+
 #section2 .dot-balls-light img {
   position: absolute;
   width: 280px;
 }
+
 #section2 .text-information {
   margin-top: 15vh;
 }
+
 #section2 .text-information h2 {
   color: #424242;
   font-size: 2.3em;
   font-weight: 400;
 }
+
 #section2 .text-information .texts-p {
   margin-top: 7vh;
 }
+
 #section2 .text-information .texts-p p {
   color: #737176;
   font-size: 18px;
 }
+
 #section2 .text-information .texts-p p span {
   color: #431641;
 }
+
 #section2 .wave-phone {
   overflow: hidden;
   position: relative;
@@ -189,27 +238,32 @@ svg {
   float: right;
   width: 98vw;
 }
+
 #section2 .wave-phone img {
   position: relative;
   left: 52vw;
   width: 70%;
 }
+
 #section2 .phone-m {
   position: relative;
   top: 0vh;
   left: 5vw;
   z-index: 999;
 }
+
 #section2 .phone-m img {
   position: absolute;
   width: 22vw;
 }
+
 #section2 .dots-yellow {
   position: relative;
   top: 70vh;
   left: 0vw;
   z-index: 99;
 }
+
 #section2 .dots-yellow img {
   position: absolute;
   width: 8vw;
@@ -218,11 +272,13 @@ svg {
 #section3 .title-line {
   margin-bottom: 3em;
 }
+
 #section3 .title-line p {
   color: #df3752;
   font-size: 20px;
   font-weight: 600;
 }
+
 #section3 .title-line hr {
   border: 0;
   border-top: 3px solid #ffc700;
@@ -232,12 +288,14 @@ svg {
   float: left;
   position: absolute;
 }
+
 #section3 h3 {
   color: #424242;
   font-size: 2.4em;
   font-weight: 400;
   margin-bottom: 1em;
 }
+
 #section3 p {
   font-size: 20px;
   color: #737176;
@@ -251,6 +309,7 @@ svg {
   display: flex;
   justify-content: space-around;
 }
+
 .stages-circle .circle {
   background-color: #431641;
   width: 50px;
@@ -262,6 +321,7 @@ svg {
   justify-content: center;
   margin-right: 30px;
 }
+
 .stages-circle .circle p {
   text-align: center;
   font-size: 35px;
@@ -274,6 +334,7 @@ svg {
   display: flex;
   justify-content: space-around;
 }
+
 .stages-icons .stage-1 {
   display: flex;
   flex-direction: column;
@@ -281,38 +342,46 @@ svg {
   align-items: center;
   margin-right: 30px;
 }
+
 .stages-icons .stage-1 p {
   color: white;
   text-align: center;
 }
+
 .stages-icons .stage-1 #stage-img1 {
   width: 120px;
   margin-top: 35px;
 }
+
 .stages-icons .stage-2 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
+
 .stages-icons .stage-2 p {
   color: white;
   text-align: center;
   margin-right: 30px;
 }
+
 .stages-icons .stage-2 #stage-img2 {
   width: 150px;
 }
+
 .stages-icons .stage-3 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
+
 .stages-icons .stage-3 p {
   color: white;
   text-align: center;
 }
+
 .stages-icons .stage-3 #stage-img3 {
   width: 70px;
   margin-top: 35px;

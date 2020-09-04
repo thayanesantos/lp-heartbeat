@@ -144,11 +144,23 @@ svg {
     }
   }
 
-  .lines-bg {
-    position: absolute;
-    top: 14vh;
-    width: 100%;
+  .bg-waves {
+    position: relative;
+
+    .lines-bg {
+      // position: absolute;
+      // top: 14vh;
+      // width: 100%;
+
+      background-image: url('../../../assets/img/sec01_wave.svg');
+      position: absolute;
+      top: 20vh;
+      height: 50vh;
+      width: 100%;
+      right: -40vw;
+    }
   }
+
 
   .dots-white {
     position: relative;
